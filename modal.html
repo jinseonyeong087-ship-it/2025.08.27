@@ -1,0 +1,39 @@
+<div class="modal-overlay">
+  <div class="modal-box">
+    <h2>멋진 모달</h2>
+    <p>이곳에 내용을 적습니다.</p>
+    <button>닫기</button>
+  </div>
+</div>
+<style>
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px); /* 배경 블러 */
+}
+.modal-box {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: 400px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25); /* 깊은 그림자 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.modal-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+}
+</style>
+
+
+
+
+
+
+
+
+
