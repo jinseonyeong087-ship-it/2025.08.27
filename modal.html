@@ -1,39 +1,53 @@
-<div class="modal-overlay">
-  <div class="modal-box">
-    <h2>멋진 모달</h2>
-    <p>이곳에 내용을 적습니다.</p>
-    <button>닫기</button>
-  </div>
-</div>
+<html>
 <style>
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0,0,0,0.5);
-  backdrop-filter: blur(4px); /* 배경 블러 */
-}
-.modal-box {
-  background: white;
-  border-radius: 16px;
-  padding: 24px;
-  width: 400px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25); /* 깊은 그림자 */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.modal-box:hover {
-  transform: scale(1.03);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
-}
+    /* 네비게이션 전체 */
+    .nav {
+        list-style: none;
+        /* 점 없애기 */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* 가로 정렬 */
+        background: #222;
+        /* 네비 배경 */
+    }
+    /* 각 메뉴 아이템 */
+    .nav li {
+        margin: 0;
+    }
+    /* 링크 스타일 */
+    .nav li a {
+        display: block;
+        /* 클릭 영역 확장 */
+        padding: 14px 20px;
+        color: white;
+        text-decoration: none;
+        transition: background 0.3s, color 0.3s;
+    }
+    /* 호버 효과 */
+    .nav li a:hover {
+        background: #444;
+        color: #FFD700;
+        /* 금색 느낌 강조 */
+    }
+    /* 활성화된 메뉴 */
+    .nav li a.active {
+        background: #007BFF;
+        /* 파란색 배경 */
+        color: white;
+    }
 </style>
-
-
-
-
-
-
+<body>
+    <nav>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
 
 
 
