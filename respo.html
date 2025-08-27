@@ -7,10 +7,19 @@
       font-size: 1rem;
     }
     .top {
-        max-width: 100%;
+        /* max-width: 100%; */
         object-fit: cover;
         height: auto;
         border: solid #000;
+    }
+
+    @media screen and (max-width: 640px) {
+        body {
+            background-color: orange;
+        }
+        .notview{
+            display: none;
+        }
     }
   </style>
 
