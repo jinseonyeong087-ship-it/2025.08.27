@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Permanent+Marker&display=swap");
+
+p,
+h1,
+h2 {
+  text-align: center;
+  color: blue;
+  font-style: italic;
+}
+
+.bg1 {
+  background-color: rgb(115, 71, 235);
+}
+
+#container {
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+body {
+   font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
